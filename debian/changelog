@@ -1,4 +1,4 @@
-hyperscan (4.2.0-1) unstable; urgency=low
+hyperscan (4.2.0-1) xenial; urgency=low
 
   * Initial release (Closes: #824838)
 
