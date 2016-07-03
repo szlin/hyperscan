@@ -2,4 +2,4 @@ hyperscan (4.2.0-1) xenial; urgency=low
 
   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
 
- -- Robert Haist <robert.haist@mailbox.org>  Sun, 03 Jul 2016 13:54:42 +0200
+ -- Robert Haist <rhaist@mailbox.org>  Sun, 03 Jul 2016 13:54:42 +0200
