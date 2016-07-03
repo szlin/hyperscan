@@ -26,3 +26,5 @@ export DEB_CXXFLAGS_MAINT_APPEND = -march=core2
 override_dh_auto_configure:
 	dh_auto_configure -- -DBUILD_STATIC_AND_SHARED=1
 
+override_dh_install:
+	dh_install --fail-missing
