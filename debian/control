@@ -10,7 +10,7 @@ Vcs-Browser: https://github.com/01org/hyperscan.git
 
 Package: libhyperscan-dev
 Section: libdevel
-Architecture: any
+Architecture: any-i386 any-amd64
 Depends: libhyperscan4.2 (= ${binary:Version}), ${misc:Depends}
 Description: High-performance regular expression matching library
  Hyperscan is a high-performance multiple regex matching library.
@@ -21,7 +21,7 @@ Description: High-performance regular expression matching library
  across streams of data. Hyperscan is typically used in a DPI library stack.
 
 Package: libhyperscan4.2
-Architecture: any
+Architecture: any-i386 any-amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: High-performance regular expression matching library
  Hyperscan is a high-performance multiple regex matching library.
