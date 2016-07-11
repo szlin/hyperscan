@@ -31,12 +31,10 @@ License: BSD-3-clause
  CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
  OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- .
- --------------------------------------------------------------------------------
- .
- This product also contains code from third parties, under the following
- licenses:
- .
+
+Files: src/crc32.c
+Copyright: 2004-2006 Intel Corporation
+License: BSD-2-clause
  Intel's Slicing-by-8 CRC32 implementation
  -----------------------------------------
  .
@@ -62,7 +60,10 @@ License: BSD-3-clause
  CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
  OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- .
+
+Files: include/boost-patched/graph/dominator_tree.hpp
+Copyright: 2005-2009 Jongsoo Park <jongsoo.park -at- gmail.com>
+License: BSL-1.0
  Boost C++ Headers Library
  -------------------------
  .
@@ -89,7 +90,10 @@ License: BSD-3-clause
  FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
  ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  DEALINGS IN THE SOFTWARE.
- .
+
+Files: unit/gtest/*
+Copyright: 2008, Google Inc.
+License: BSD-3-clause
  The Google C++ Testing Framework (Google Test)
  ----------------------------------------------
  .
@@ -120,7 +124,7 @@ License: BSD-3-clause
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Files: debian/*
-Copyright: 2016 rhaist <rhaist@mailbox.org>
+Copyright: 2016 Robert Haist <rhaist@mailbox.org>
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -137,4 +141,3 @@ License: GPL-2+
  .
  On Debian systems, the complete text of the GNU General
  Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
-
