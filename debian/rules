@@ -3,19 +3,14 @@
 # output every command that modifies files on the build system.
 #export DH_VERBOSE = 1
 
-# Explicitly turn on SSSE3
-export DEB_CFLAGS_MAINT_APPEND = -march=core2
-export DEB_CXXFLAGS_MAINT_APPEND = -march=core2
+# Explicitly turn on SSSE3 as it has a broader compatibility
+# with oldish hardware than the alternative new AVX2 instruction
+# set (>=Haswell) hyperscan uses if available
+export DEB_CFLAGS_MAINT_APPEND = -mssse3
+export DEB_CXXFLAGS_MAINT_APPEND = -mssse3
 
 # see FEATURE AREAS in dpkg-buildflags(1)
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
-
-# see ENVIRONMENT in dpkg-buildflags(1)
-# package maintainers to append CFLAGS
-#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
-# package maintainers to append LDFLAGS
-#export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
-
 
 %:
 	dh $@ --parallel
