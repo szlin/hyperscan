@@ -1,10 +1,10 @@
 Source: hyperscan
 Priority: optional
 Maintainer: Robert Haist <rhaist@mailbox.org>
-Build-Depends: debhelper (>=9), 
-               cmake (>=2.8.11), 
-               ragel (>=6.9), 
-               libboost-dev (>=1.57), 
+Build-Depends: debhelper (>=9),
+               cmake (>=2.8.11),
+               ragel (>=6.9),
+               libboost-dev (>=1.57),
                python (>=2.7)
 Standards-Version: 3.9.8
 Section: libs
