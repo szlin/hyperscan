@@ -16,13 +16,10 @@ Package: libhyperscan-dev
 Section: libdevel
 Architecture: any-i386 any-amd64
 Depends: libhyperscan4.2 (= ${binary:Version}), ${misc:Depends}
-Description: High-performance regular expression matching library
- Hyperscan is a high-performance multiple regex matching library.
- It follows the regular expression syntax of the commonly-used libpcre library,
- but is a standalone library with its own C API. Hyperscan uses hybrid automata
- techniques to allow simultaneous matching of large numbers (up to tens of
- thousands) of regular expressions and for the matching of regular expressions
- across streams of data. Hyperscan is typically used in a DPI library stack.
+Description:  Development files for the Hyperscan library
+ It contains development libraries, header files and documentation for libhyperscan4.2.
+ .
+ Install this package if you wish to develop your own programs using the Hyperscan 
 
 Package: libhyperscan4.2
 Architecture: any-i386 any-amd64
