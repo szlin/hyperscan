@@ -1,0 +1,25 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    install|upgrade)
+        if ! grep -q '^flags[[:space:]]*:.*[[:space:]]ssse3[[:space:]]' /proc/cpuinfo; then
+            echo 'A CPU with SSSE3 extensions is needed to use libhyperscan.' >&2
+            echo 'Aborting installation.' >&2
+            exit 1
+        fi
+    ;;
+
+    abort-upgrade)
+    ;;
+
+    *)
+        echo "preinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0
