@@ -1,18 +1,5 @@
-hyperscan (4.2.0-3) xenial; urgency=low
-
-  * Fixed various lintian errors
-  * Added binary hardening
-
- -- Robert Haist <rhaist@mailbox.org>  Wed, 06 Jul 2016 09:21:43 +0200
-
-hyperscan (4.2.0-2) xenial; urgency=low
-
-  * Removed symbols file
-
- -- Robert Haist <rhaist@mailbox.org>  Mon, 04 Jul 2016 00:01:28 +0200
-
-hyperscan (4.2.0-1) xenial; urgency=low
+hyperscan (4.2.0-1) unstable; urgency=medium
 
   * Initial release (Closes: #824838)
 
- -- Robert Haist <rhaist@mailbox.org>  Sun, 03 Jul 2016 13:54:42 +0200
+ -- Robert Haist <rhaist@mailbox.org>  Mon, 25 Jul 2016 16:44:23 +0200
