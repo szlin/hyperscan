@@ -16,7 +16,7 @@ Package: libhyperscan4.2-dev
 Section: libdevel
 Architecture: any-i386 any-amd64
 Depends: libhyperscan4.2 (= ${binary:Version}), ${misc:Depends}
-Description:  Development files for the Hyperscan library
+Description: Development files for the Hyperscan library
  This package contains development libraries, header files and documentation for
  the regular expression matching library libhyperscan4.2. You can either use the
  supplied shared or static library.
