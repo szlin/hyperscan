@@ -12,14 +12,16 @@ Homepage: https://01.org/hyperscan
 Vcs-Git: https://github.com/01org/hyperscan.git
 Vcs-Browser: https://github.com/01org/hyperscan.git
 
-Package: libhyperscan-dev
+Package: libhyperscan4.2-dev
 Section: libdevel
 Architecture: any-i386 any-amd64
 Depends: libhyperscan4.2 (= ${binary:Version}), ${misc:Depends}
 Description:  Development files for the Hyperscan library
- It contains development libraries, header files and documentation for libhyperscan4.2.
+ This package contains development libraries, header files and documentation for
+ the regular expression matching library libhyperscan4.2. You can either use the
+ supplied shared or static library.
  .
- Install this package if you wish to develop your own programs using the Hyperscan 
+ libhyperscan only runs on processors with at least SSSE3 support.
 
 Package: libhyperscan4.2
 Architecture: any-i386 any-amd64
@@ -31,4 +33,6 @@ Description: High-performance regular expression matching library
  techniques to allow simultaneous matching of large numbers (up to tens of
  thousands) of regular expressions and for the matching of regular expressions
  across streams of data. Hyperscan is typically used in a DPI library stack.
+ .
+ libhyperscan only runs on processors with at least SSSE3 support.
 
