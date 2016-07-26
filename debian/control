@@ -26,6 +26,7 @@ Description: Development files for the Hyperscan library
 Package: libhyperscan4.2
 Architecture: any-i386 any-amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: debconf
 Description: High-performance regular expression matching library
  Hyperscan is a high-performance multiple regex matching library.
  It follows the regular expression syntax of the commonly-used libpcre library,

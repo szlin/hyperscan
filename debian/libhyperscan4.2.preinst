@@ -5,9 +5,16 @@ set -e
 case "$1" in
     install|upgrade)
         if ! grep -q '^flags[[:space:]]*:.*[[:space:]]ssse3[[:space:]]' /proc/cpuinfo; then
-            echo 'A CPU with SSSE3 extensions is needed to use libhyperscan.' >&2
-            echo 'Aborting installation.' >&2
-            exit 1
+            . /usr/share/debconf/confmodule
+            db_version 2.0
+            db_input critical libhyperscan/cpu-ssse3 || true
+            db_go
+            db_get libhyperscan/cpu-ssse3
+            if [ "$RET" = 'false' ]; then
+                echo 'Aborting installation.' >&2
+                db_purge
+                exit 1
+            fi
         fi
     ;;
 
