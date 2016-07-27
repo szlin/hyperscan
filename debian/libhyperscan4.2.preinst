@@ -11,7 +11,7 @@ case "$1" in
             db_go
             db_get libhyperscan/cpu-ssse3
             if [ "$RET" = 'false' ]; then
-                echo 'Aborting installation.' >&2
+                echo 'Aborting installation because of missing SSSE3 extension.' >&2
                 db_purge
                 exit 1
             fi
