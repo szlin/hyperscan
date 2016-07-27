@@ -12,13 +12,13 @@ Homepage: https://01.org/hyperscan
 Vcs-Git: https://github.com/01org/hyperscan.git
 Vcs-Browser: https://github.com/01org/hyperscan.git
 
-Package: libhyperscan4.2-dev
+Package: libhyperscan-dev
 Section: libdevel
 Architecture: any-i386 any-amd64
 Depends: libhyperscan4.2 (= ${binary:Version}), ${misc:Depends}
 Description: Development files for the Hyperscan library
  This package contains development libraries, header files and documentation for
- the regular expression matching library libhyperscan4.2. You can either use the
+ the regular expression matching library libhyperscan. You can either use the
  supplied shared or static library.
  .
  libhyperscan only runs on processors with at least SSSE3 support.
