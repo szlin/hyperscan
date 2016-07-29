@@ -1,12 +1,12 @@
-hyperscan (4.2.0-1.1) unstable; urgency=medium
+hyperscan (4.2.0-2) unstable; urgency=medium
 
   [ Eduard Sanou ]
   * Non-maintainer upload.
   * Use SOURCE_DATE_EPOCH as embedded timestamp to make the build
-    reproducible.
+    reproducible (Closes: #832917).
 
   [ Robert Haist ]
-  * Fix E-march-native for i386, kfreebsd-amd64, kfreebsd-i386, x32
+  * Fix builds (E-march-native) for i386, kfreebsd-amd64, kfreebsd-i386, x32.
 
  -- Robert Haist <rhaist@mailbox.org>  Fri, 29 Jul 2016 20:49:09 +0200
 
