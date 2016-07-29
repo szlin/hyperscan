@@ -6,8 +6,8 @@
 # Explicitly turn on SSSE3 as it has a broader compatibility
 # with oldish hardware than the alternative new AVX2 instruction
 # set (>=Haswell) hyperscan uses if available
-export DEB_CFLAGS_MAINT_APPEND = -mssse3
-export DEB_CXXFLAGS_MAINT_APPEND = -mssse3
+export DEB_CFLAGS_MAINT_APPEND = -mssse3 -march=core2
+export DEB_CXXFLAGS_MAINT_APPEND = -mssse3 -march=core2
 
 # see FEATURE AREAS in dpkg-buildflags(1)
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
