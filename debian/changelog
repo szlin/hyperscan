@@ -1,7 +1,6 @@
 hyperscan (4.2.0-2) unstable; urgency=medium
 
   [ Eduard Sanou ]
-  * Non-maintainer upload.
   * Use SOURCE_DATE_EPOCH as embedded timestamp to make the build
     reproducible (Closes: #832917).
 
